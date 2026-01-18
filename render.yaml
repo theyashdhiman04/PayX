@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: payx-api
+    env: go
+    buildCommand: go build -o main .
+    startCommand: ./main
+    healthCheckPath: /health
